@@ -7,11 +7,13 @@ wget -q -O - https://ppa.pika-os.com/key.gpg | sudo apt-key add -
 add-apt-repository https://ppa.pika-os.com
 add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
-apt install pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
+#apt install pika-sources.deb --yes --option Acquire::Retries=5 --option Acquire::http::Timeout=100 --option Dpkg::Options::="--force-confnew"
 # Clone Upstream
-mkdir -p ./src-pkg-name
-cp -rvf ./debian ./src-pkg-name/
-cd ./src-pkg-name/
+
+wget -nv https://gitlab.freedesktop.org/wayland/wayland/-/archive/1.22.0/wayland-1.22.0.tar.gz
+tar -xf ./wayland-1.22.0.tar.gz
+cp -rvf ./debian ./wayland-1.22.0/
+cd ./wayland-1.22.0/
 
 # Get build deps
 ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
