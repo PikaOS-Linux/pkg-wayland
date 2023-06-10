@@ -1,3 +1,9 @@
+wayland (1.22.0-99pika3) lunar; urgency=medium
+
+  * 32bit plz bump
+
+ -- Ferrreo <harderthanfire@gmail.com>  Fri, 08 Jul 2022 18:26:04 +0200
+
 wayland (1.22.0-99pika2) lunar; urgency=medium
 
   * 32bit plz
