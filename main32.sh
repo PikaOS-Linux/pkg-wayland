@@ -9,6 +9,7 @@ apt update
 # Clone Upstream
 wget -nv https://gitlab.freedesktop.org/wayland/wayland/-/archive/1.22.0/wayland-1.22.0.tar.gz
 tar -xf ./wayland-1.22.0.tar.gz
+mv ./wayland-1.22.0.tar.gz ./wayland-1.22.0.orig.tar.gz
 cp -rvf ./debian ./wayland-1.22.0/
 cd ./wayland-1.22.0/
 
