@@ -4,7 +4,7 @@ dpkg-sig --sign builder ./output/*.deb
 # Pull down existing ppa repo db files etc
 rsync -azP --exclude '*.deb' ferreo@direct.pika-os.com:/srv/www/pikappa/ ./output/repo
 
-reprepro -V --basedir ./output/repo/ removefilter lunar 'Package (% libwayland-doc*_all*)'
+reprepro -V --basedir ./output/repo/ removefilter lunar 'Package (% libwayland-doc*)'
 
 # Add the new package to the repo
 reprepro -V --basedir ./output/repo/ includedeb lunar ./output/*.deb
