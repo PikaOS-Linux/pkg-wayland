@@ -1,2 +1,2 @@
-wayland_1.22.0.orig.tar.gz
+wayland_1.23.0.orig.tar.gz
 #https://gitlab.freedesktop.org/wayland/wayland/-/releases
