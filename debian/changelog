@@ -1,3 +1,9 @@
+wayland (1.23.0+really1.22.0-100pika1) pikauwu; urgency=medium
+
+  * new upstrean release
+
+ -- Ferrreo <harderthanfire@gmail.com>  Fri, 08 Jul 2022 18:26:04 +0200
+
 wayland (1.23.0-100pika1) pikauwu; urgency=medium
 
   * new upstrean release
